@@ -1,0 +1,45 @@
+.App {
+  background-color: #262626;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* !BUTTON STYLE */
+
+.homeBtn {
+  color: #4ea8de;
+  background-color: transparent;
+  border-radius: 50px;
+  border: solid 2px #4ea8de;
+  padding: 25px 50px;
+  outline: none;
+  font-size: 1.5em;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.homeBtn:hover {
+  box-shadow: 0 0 10px 1px rgb(255, 161, 242), 0 0 10px 2px rgb(135, 211, 255),
+    0px 15px 50px black;
+  color: #340c75;
+  border: none;
+  background-color: #95d7ff;
+  transition: 0.5s;
+  transform: translateY(-20px);
+}
+
+.homeBtn:not(:hover) {
+  transition: 0.5s ease-in-out;
+  transform: translateY(20px);
+  box-shadow: 0 0px 0px #000;
+  transition-delay: 50ms;
+}
+
+/* !END OF BUTTON STYLE */
+
+/* PROFILE TOGGLE CLASS */
+/* .popUp {
+  display: none;
+} */
