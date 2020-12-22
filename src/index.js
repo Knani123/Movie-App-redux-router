@@ -6,14 +6,13 @@ import reportWebVitals from "./reportWebVitals";
 import store from "./store";
 import { Provider } from "react-redux";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import MovieDetails from "./MovieDetails";
-import NavMovie from "./NavMovie";
-import AddMovie from "./AddMovie";
+import MovieDetails from "./components/MovieDetails";
+import NavMovie from "./components/NavMovie";
+import AddMovie from "./components/AddMovie";
 ReactDOM.render(
   <Provider store={store}>
     <React.StrictMode>
       <Router>
-        <NavMovie />
         <Switch>
           <Route exact path="/" component={App} />
           <Route exact path="/movie/:id" component={MovieDetails} />

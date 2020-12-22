@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import { FormText } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import StarRating from "./StarRating";
 import { useDispatch } from "react-redux";
-import { addMovie } from "./action/movieAction";
+import { addMovie } from "../action/movieAction";
 import { useHistory } from "react-router-dom";
 import swal from "sweetalert";
 
@@ -45,10 +45,16 @@ const AddMovie = () => {
     swal("Good job!", "Your Movie is Added!", "success");
     setTimeout(() => {
       history.push(`/#${form.id}`);
-    }, 3000);
+    }, 2000);
   };
   return (
     <div className="d-flex flex-column">
+      <button className="btn btn-success position-absolute m-2">
+        <Link to="./" className="text-light text-decoration-none">
+          Go Back
+        </Link>
+        &#11207;
+      </button>
       <h1 className=" w-50 m-auto text-center">Add Your Movie</h1>
       <form
         action=""

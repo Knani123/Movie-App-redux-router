@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useDispatch } from "react-redux";
 import StarRating from "./StarRating";
-import { serMovie } from "./action/movieAction";
+import { serMovie } from "../action/movieAction";
 
 const Search = () => {
   const dispatch = useDispatch();
