@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import { useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
 const MovieDetails = () => {
-  const movies = useSelector((state) => state.movieReducer);
+  const movies = useSelector((state) => state.movieReducer.list);
   const movId = useParams().id;
   console.log("movies", movies);
   console.log(movId);

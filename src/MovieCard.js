@@ -2,12 +2,14 @@ import React from "react";
 import { Link } from "react-router-dom";
 import StarRating from "./StarRating";
 const MovieCard = ({ el }) => {
+  const addStars = () => {};
+
   return (
     <div
       className="col-lg-3 col-md-3 col-sm-3 border border-secondary shadow-lg m-2 text-center"
       id={el.id}
     >
-      <StarRating rate={el.rate} />
+      <StarRating rate={el.rate} addStars={addStars} />
       <img src={el.image} alt={el.name} width="150px" height="200px" />
       <h5>{el.name}</h5>
       <p>{el.date}</p>
